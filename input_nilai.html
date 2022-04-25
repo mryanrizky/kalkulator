@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Input Nilai</title>
+<style>
+	html, body{
+ 		height: 100%;
+		background: linear-gradient(yellow,green);
+	}
+	.footer {
+		text-align: center;
+		color:white;
+		padding: 20px;
+
+	}
+	.konten {
+	    height: 100%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.box {
+		place-content: center;
+		background: radial-gradient(white,black);
+		color:black;
+	}
+	.btn {
+		width:82%;
+		background: grey;
+		border-color: black;
+		margin:2px;
+	}	
+	.btnplus, .btnkali, .btnmin, .btnbagi {
+		width: 40%;
+		margin: 2px;
+	}
+	.btnplus {
+		background: #FFFFFF;
+		border-color: black;
+	}
+	.btnkali {
+		background: #01FF06;
+		border-color: black;
+	}
+	.btnmin {
+		background: #F4EB0D;
+		border-color: black;
+	}
+	.btnbagi {
+		background: #E76161;
+		border-color: black;
+	}
+	.head {
+		background: #0B96FB;
+	}
+	.subhead {
+		background: #FFEE0C;
+	}
+</style>
+</head>
+
+<body>
+<div class="konten">
+<div class="box">
+<form name="form1" method="post" action="output_nilai.php">
+<table width="321" border="1" cellspacing="0" cellpadding="3">
+  <tbody>
+    <tr>
+      <td colspan="2" class="head"><center><strong>Project Responsi UTS</strong></center></td>
+      </tr>
+    <tr>
+      <td colspan="2" class="subhead"><center>Operasi Aritmatika</center></td>
+      </tr>
+    <tr>
+      <td width="134">&nbsp;Bilangan 1</td>
+      <td width="177"><input type="text" name="bilangan1"></td>
+    </tr>
+    <tr> </tr>
+    <tr>
+      <td width="134">&nbsp;Bilangan 2</td>
+      <td width="175"><input type="text" name="bilangan2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Operasi</td>
+      <td><center><input type="reset" name="reset" value="Clear" class="btn"></center></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><center><input type="submit" name="hitung" value="+" class="btnplus"><input type="submit" name="hitung" value="*" class="btnkali"></center></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><center><input type="submit" name="hitung" value="-" class="btnmin"><input type="submit" name="hitung" value=":" class="btnbagi"></center></td>
+    </tr>
+  </tbody>
+</table>
+</form>
+<div class="footer">Mochamad Ryan Rizky</div>
+</div>
+</div>
+</body>
+</html>
